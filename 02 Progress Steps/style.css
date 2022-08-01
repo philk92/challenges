@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-fg: #003170;
+  --clr-line: #e0e0e0;
+  --transition-length: 1s;
+}
+
+/*Font available: Roboto 
+    100 thin + italic
+    300 light + italic
+    400 regular + italic
+    700 bold
+    */
+
+body {
+  font-family: "Muli", sans-serif;
+  background-color: #f6f7fb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  max-width: 100%;
+  width: 350px;
+}
+
+.progress-container::before {
+  content: " ";
+  position: absolute;
+  background-color: var(--clr-line);
+  height: 4px;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.progress {
+  position: absolute;
+  background-color: var(--clr-fg);
+  height: 4px;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+  width: 0%;
+  z-index: -1;
+  transition: var(--transition-length) ease;
+}
+
+.circle {
+  background-color: white;
+  border: 3px solid var(--clr-line);
+  color: #999;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition-length) ease;
+  font-size: 0.9em;
+}
+
+.circle.active {
+  border-color: var(--clr-fg);
+}
+
+.btn {
+  background-color: var(--clr-fg);
+  color: #ffffff;
+  border: 0;
+  border-radius: 6px;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 8px 30px;
+  font-size: 14px;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn + .btn {
+  margin-left: 5px;
+}
+
+.btn:disabled {
+  background-color: var(--clr-line);
+  transform: none;
+  cursor: not-allowed;
+}
+
+button {
+  margin-top: 22px;
+}

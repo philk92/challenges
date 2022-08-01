@@ -1,0 +1,78 @@
+:root {
+  --clr-red: red;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  text-align: center;
+  background-color: black;
+  background-color: #21d4fd;
+  background-image: linear-gradient(18deg, #5be1ff 0%, #c956ff 100%);
+  color: black;
+  font-family: Cairo, sans-serif;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+}
+.cardcontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexContainer {
+  display: flex;
+  max-width: 460px;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 0 0 60px;
+  height: 90px;
+  width: 60px;
+  border: 1px solid black;
+  background-color: white;
+  margin: 10px;
+  padding: 5px;
+  color: black;
+  border-radius: 7px;
+  cursor: pointer;
+  text-align: start;
+  font-size: 2rem;
+  /* font-family: serif; */
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+#two,
+#three,
+#four,
+#five,
+#jay,
+#queen,
+#king,
+#ace {
+  color: red;
+}
+
+.scoreContainer {
+  margin-top: 50px;
+}
+h1 {
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+#scoreAdvice {
+  margin-top: -10px;
+}
