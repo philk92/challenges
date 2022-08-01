@@ -6,7 +6,7 @@ function randCol() {
   const r = Math.floor(Math.random() * 255);
   const g = Math.floor(Math.random() * 255);
   const b = Math.floor(Math.random() * 255);
-  const a = Math.floor(Math.random() * 10) / 10;
+  const a = Math.floor(Math.random() * 6) / 10 + 0.5;
   return `rgba(${r},${g},${b},${a})`;
 }
 
@@ -19,7 +19,7 @@ function onload() {
   const r = Math.floor(Math.random() * 255);
   const g = Math.floor(Math.random() * 255);
   const b = Math.floor(Math.random() * 255);
-  const a = Math.floor(Math.random() * 10) / 10;
+  const a = Math.floor(Math.random() * 6) / 10 + 0.5;
   let str = `rgba(${r},${g},${b},${a})`;
   body.style.backgroundColor = str;
   h1.innerText = body.style.backgroundColor;
