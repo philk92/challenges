@@ -17,13 +17,14 @@ body {
   background-color: white;
   border: 1px solid black;
   border-radius: 0px;
-  padding: 30px;
+  padding: 20px;
   text-align: center;
+  width: 430px;
 }
 
 button {
-  margin-top: 12px;
-  background-color: black;
+  margin-top: 16px;
+  background-color: #444;
   border: 1px solid black;
   color: white;
   padding: 10px 30px;
@@ -33,4 +34,7 @@ button {
 
 button:active {
   transform: scale(0.98);
+}
+h1 {
+  margin: 0;
 }
