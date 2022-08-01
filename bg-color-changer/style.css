@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aqua;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.container {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0px;
+  padding: 30px;
+  text-align: center;
+}
+
+button {
+  margin-top: 12px;
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 0px;
+  /* box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 9px; */
+}
+
+button:active {
+  transform: scale(0.98);
+}
