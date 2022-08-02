@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Score Counter</title>
+  </head>
+  <body>
+    <div class="scoreContainer"><span id="scoreOneText">0</span>-<span id="scoreTwoText">0</span></div>
+
+    <div class="selectContainer">
+      <span>Playing to:</span>
+      <div class="select is-dark">
+        <select name="maxScore" class="" id="maxScoreSelect">
+          <option value="5">5</option>
+          <option value="7">7</option>
+          <option value="9">9</option>
+          <option value="11">11</option>
+          <option value="21">21</option>
+        </select>
+      </div>
+    </div>
+    <div class="field">
+      <button class="button is-primary" id="playerOne">+1 Player One</button>
+      <button class="button is-danger" id="Reset">Reset</button>
+      <button class="button is-warning" id="playerTwo">+1 Player Two</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

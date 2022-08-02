@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.scoreContainer {
+  font-size: 250px;
+}
+
+.selectContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.field {
+  margin-top: 15px;
+}
+
+.green {
+  transition: all 2s;
+}
