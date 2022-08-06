@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock - Paper - Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../components/bulma.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rock - Paper - Scissors</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css" />
-</head>
-
-<body>
-  <div class="flexcontainer">
-    <div id="container">
-      <h1>Rock, Paper, Scissors</h1>
-      <h2 id="gameOutcome">First to 5 - Make your Choice!</h2>
-      <button id="rock" onclick="game('Rock')">Rock</button>
-      <button id="paper" onclick="game('Paper')">Paper</button>
-      <button id="scissors" onclick="game('Scissors')">Scissors</button>
-      <p id="scoreText">Score:</p>
-      <h2 id="userScore">0 - 0</h2>
+  <body>
+    <header class="hero is-primary is-small">
+      <div class="hero-body">
+        <p class="title">Rock, Paper, Scissors</p>
+        <a class="button is-outlined is-white is-small" href="https://philk92.github.io/challenges">Zurück</a>
+      </div>
+    </header>
+    <div class="flexcontainer">
+      <div>
+        <div id="container">
+          <h2 class="title" id="gameOutcome">First to 5 - Make your Choice!</h2>
+          <h2 class="subtitle" id="userScore">Score: 0 - 0</h2>
+          <button class="button is-warning" id="rock" onclick="game('Rock')">Rock</button>
+          <button class="button is-info" id="paper" onclick="game('Paper')">Paper</button>
+          <button class="button is-danger" id="scissors" onclick="game('Scissors')">Scissors</button>
+        </div>
+        <div class="midcontainer">
+          <h1 class="title" id="newGame"></h1>
+          <p class="subtitle" id="finalScore"></p>
+          <div class="restartcontainer">
+            <button class="button is-primary" id="restart" style="display: none" onclick="window.location.reload();">
+              Restart Game!
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-    <h1 id="newGame"></h1>
-    <p id="finalScore"></p>
-    <div class="restartcontainer"><button id="restart" style="display: none" onclick="window.location.reload();">Restart
-        Game!</button></div>
     <script src="./script.js"></script>
-  </div>
-</body>
-
+  </body>
 </html>

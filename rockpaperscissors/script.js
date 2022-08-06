@@ -50,24 +50,18 @@ function score(outcom) {
   switch (outcom) {
     case 1:
       ++userScore;
-      document.getElementById(
-        "gameOutcome"
-      ).innerHTML = `You Win - Computer choosed ${computerChoice}!`;
-      scoreString = userScore.toString() + " - " + computerScore.toString();
+      document.getElementById("gameOutcome").innerHTML = `You Win - Computer choosed ${computerChoice}!`;
+      scoreString = "Score:  " + userScore.toString() + " - " + computerScore.toString();
       document.getElementById("userScore").innerHTML = scoreString;
       break;
     case 2:
       ++computerScore;
-      document.getElementById(
-        "gameOutcome"
-      ).innerHTML = `You Lose -  Computer choosed ${computerChoice}!`;
-      scoreString = userScore.toString() + " - " + computerScore.toString();
+      document.getElementById("gameOutcome").innerHTML = `You Lose -  Computer choosed ${computerChoice}!`;
+      scoreString = "Score:  " + userScore.toString() + " - " + computerScore.toString();
       document.getElementById("userScore").innerHTML = scoreString;
       break;
     case 3:
-      document.getElementById(
-        "gameOutcome"
-      ).innerHTML = `Draw - Computer choosed ${computerChoice}!`;
+      document.getElementById("gameOutcome").innerHTML = `Draw - Computer choosed ${computerChoice}!`;
       break;
   }
   if (userScore > 4) {
@@ -75,18 +69,14 @@ function score(outcom) {
     document.getElementById("container");
     ele.remove();
     showButton();
-    document.getElementById("newGame").innerText = "YOU WIN!";
-    document.getElementById(
-      "finalScore"
-    ).innerText = `Final Score is ${scoreString}`;
+    document.getElementById("newGame").innerText = "You Win!";
+    document.getElementById("finalScore").innerText = `Final score is ${scoreString}`;
   } else if (computerScore > 4) {
     const ele = document.getElementById("container");
     document.getElementById("container");
     ele.remove();
     showButton();
-    document.getElementById("newGame").innerText = "YOU LOSE!";
-    document.getElementById(
-      "finalScore"
-    ).innerText = `Final Score is ${scoreString}`;
+    document.getElementById("newGame").innerText = "You Lose!";
+    document.getElementById("finalScore").innerText = `Final score is ${scoreString}`;
   }
 }

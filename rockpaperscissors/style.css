@@ -5,59 +5,46 @@
 
 body {
   display: flex;
+  height: 100vh;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #fbda61;
-  background-image: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
-  color: #000000;
+  flex-direction: column;
+  width: 100vw;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+header {
+  width: 100vw;
+  flex: 0 0 auto;
+}
+
+.flexcontainer {
+  flex: 1 0;
   text-align: center;
-  font-family: Cairo, sans-serif;
-}
-
-button {
-  background-color: #ffffff;
-  width: 100px;
-  padding: 10px 0;
-  border-radius: 10px;
-  color: #222222;
-  box-shadow: black 4px 4px 0;
-  border: 2px solid black;
-  margin-top: 10px;
-}
-
-h1 {
-  margin-top: 80px;
-}
-#gameOutcome {
-  margin-top: 50px;
-}
-#userScore {
-  line-height: 1;
-  margin-top: 0px;
-  /* font-size: xx-large; */
-}
-h2 {
-  font-weight: 400;
-}
-#scoreText {
-  padding-top: 30px;
-}
-button + button {
-  margin-left: 20px;
-}
-
-#restart {
-  display: none;
-  width: 150px;
-  margin-top: 30px;
-}
-.restartcontainer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#finalScore {
-  margin-top: 0px;
+.midcontainer,
+.restartcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
 }
+
+.midcontainer {
+  margin-top: -10px;
+}
+
+/* .hero-body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 84px;
+  justify-content: space-between;
+} */

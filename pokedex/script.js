@@ -915,7 +915,11 @@ for (let i = 1; i <= 151; i++) {
   pokemonImg.setAttribute("src", `${fetchUrl}${i}.png`);
   pokemonContainer.appendChild(pokemonImg);
   const pokemonLabel = document.createElement("span");
-  pokemonLabel.innerHTML = `Nr. ${i}<br><b>${pokemon[i - 1]}</b>`;
+  pokemonLabel.innerHTML = `Nr. ${i}`;
   pokemonLabel.classList.add("text");
   pokemonContainer.appendChild(pokemonLabel);
+  const pokemonName = document.createElement("span");
+  pokemonName.innerHTML = `${pokemon[i - 1]}`;
+  pokemonName.classList.add("textName");
+  pokemonContainer.appendChild(pokemonName);
 }

@@ -29,3 +29,11 @@
   margin: 30px auto;
   flex-direction: column;
 }
+
+/* .hero-body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 84px;
+  justify-content: space-between;
+} */
