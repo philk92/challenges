@@ -9,9 +9,10 @@
 }
 
 body {
-  background: linear-gradient(-45deg, #ffd16d, #ff5194, #3acaff, #3bff8d);
-  background-size: 300% 300%;
-  animation: gradient 25s ease infinite;
+  /* background: linear-gradient(-45deg, #ffd16d, #ff5194, #3acaff, #3bff8d);
+  animation: gradient 25s ease infinite; */
+  background: linear-gradient(-45deg, #ffd67d, #ff6ca4, #4dd0ff);
+  background-size: 200% 200%;
   height: 100vh;
   color: var(--clr-fg1);
   font-family: "SF Pro", "Helvetica Neue", Arial, Helvetica, sans-serif;
