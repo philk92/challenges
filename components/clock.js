@@ -28,7 +28,7 @@ function uhrzeit() {
     "Dezember",
   ];
 
-  const days = ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"];
+  const days = ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"];
 
   // add leading 0 to variables under 10
   h = h < 10 ? "0" + h : h;
@@ -37,7 +37,7 @@ function uhrzeit() {
   let month = mon < 10 ? "0" + (mon + 1) : mon + 1;
   let day = d < 10 ? "0" + d : d;
   // assign weekday to name in array "days"
-  let weekday = days[dt - 1];
+  let weekday = days[dt];
   // assign month to name in array "month"
   let monthName = months[mon];
   // returns last 2 digits of year
