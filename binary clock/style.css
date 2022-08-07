@@ -23,8 +23,8 @@ body {
 }
 .gridContainer {
   display: grid;
-  grid-template-columns: repeat(6, calc(var(--size) + 8%));
-  grid-template-rows: repeat(4, calc(var(--size) + 8%));
+  grid-template-columns: repeat(6, calc(var(--size) + 10%));
+  grid-template-rows: repeat(4, calc(var(--size) + 10%));
 }
 
 .no {
