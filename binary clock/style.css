@@ -1,0 +1,39 @@
+:root {
+  --size: 40px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.dot {
+  height: var(--size);
+  width: var(--size);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  background-color: #333;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(6, calc(var(--size) + 8%));
+  grid-template-rows: repeat(4, calc(var(--size) + 8%));
+}
+
+.no {
+  border: none;
+  background-color: black;
+}
+
+.on {
+  background-color: yellow;
+  box-shadow: 0px 0px 20px 8px rgba(255, 227, 0, 0.37);
+  border-color: rgba(0, 0, 0, 0.1);
+}
