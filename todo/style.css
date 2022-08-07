@@ -1,29 +1,69 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&display=swap");
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+:root {
+  --width: 350px;
 }
-
-/*Font available: Roboto 
-    100 thin + italic
-    300 light + italic
-    400 regular + italic
-    700 bold
-    */
-
 body {
-  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   height: 100vh;
-  overflow: hidden;
+  width: 100vw;
 }
 
-#task,
-#los {
-  display: inline-block;
+.borderDiv {
+  margin: 5px auto;
+  width: var(--width);
+  height: 38px;
+  border: 1px solid rgba(206, 212, 218, 1);
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.todoText {
+  flex: 1 0 auto;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #777;
+}
+.delButton {
+  transform: scale(0.7);
+  margin-right: -5px;
+}
+
+.btngroup {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+  width: var(--width);
+  justify-content: center;
+}
+
+.inputContainer {
+  margin: 13px 0 2px;
+  width: var(--width);
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.listContainer,
+.doneContainer {
+  width: var(--width);
+}
+
+.text {
+  font-size: 1.1em;
+  display: block;
+  margin: 8px 0;
+}
+.line {
+  width: 100%;
+  border-bottom: 2px solid black;
 }
