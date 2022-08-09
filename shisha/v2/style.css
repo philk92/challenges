@@ -107,17 +107,15 @@ tr td:last-of-type {
     display: block;
   }
 
-  /* Hide table headers (but not display: none;, for accessibility) */
+  /* Hide table headers (but not display: none;, for accessibility) 
+  pk: hide only 2. and 3.*/
   thead th:nth-of-type(2),
   thead th:nth-of-type(3) {
     position: absolute;
     top: -9999px;
     left: -9999px;
   }
-  /* .scrolli {
-    width: 100%;
-    margin: 0 auto;
-  } */
+
   td {
     /* Behave  like a "row" */
     border: none;
@@ -157,9 +155,7 @@ tr td:last-of-type {
   * {
     border-radius: 0 !important;
   }
-  .btn {
-    border-radius: 5px !important;
-  }
+
   h1 {
     font-size: 36px;
     margin-top: 50px;
