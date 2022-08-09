@@ -36,9 +36,9 @@ body {
 h1 {
   color: white;
   margin: 70px;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
   font-family: "Luckiest Guy", cursive;
-  font-size: 80px;
+  font-size: 70px;
 }
 
 #btnAdd {
@@ -86,7 +86,7 @@ tr:last-of-type td:last-of-type {
 }
 .scrolli {
   overflow-x: auto;
-  width: 98%;
+  width: 97%;
   margin: 0 auto;
 }
 
@@ -95,7 +95,9 @@ tr td:last-of-type {
 }
 
 @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* Force table to not be like tables anymore */
+  /* 
+  https://css-tricks.com/responsive-data-tables/
+  Force table to not be like tables anymore */
   table,
   thead,
   tbody,
@@ -138,13 +140,16 @@ tr td:last-of-type {
     font-weight: bold;
   }
   .coltitle {
-    margin-top: -15px;
+    margin-top: -18px;
   }
   .colscore {
     font-weight: bold;
+    margin-top: -40px;
   }
   .colflavour {
-    font-size: 0.9em;
+    margin-top: -10px;
+    font-style: italic;
+    margin-right: 50px;
   }
   #scoreT {
     margin-top: -42px;
@@ -152,7 +157,11 @@ tr td:last-of-type {
   * {
     border-radius: 0 !important;
   }
+  .btn {
+    border-radius: 5px !important;
+  }
   h1 {
     font-size: 36px;
+    margin-top: 50px;
   }
 }
